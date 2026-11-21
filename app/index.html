@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide — GTA VI Platinum Tracker</title>
+<meta name="description" content="Offline guide and tracker for all 55 PlayStation 5 trophies of Grand Theft Auto VI: official names, descriptions and grades, a platinum roadmap, missable warnings, and a cited guide for every trophy.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="hero-inner">
+    <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5 &middot; Unofficial fan guide</p>
+    <h1>Leonida Trophy Guide</h1>
+    <p class="lede">Every one of the 55 trophies — official name, description and grade, a guide in our own words with its sources, and a tracker that remembers your progress on this device. No account, no network: it works offline.</p>
+    <div class="progress-wrap" aria-label="Platinum progress">
+      <div class="progress-big"><span id="earnedCount">0</span><span class="of"> / 55 earned</span></div>
+      <div class="progress-bar"><div id="progressFill" class="progress-fill"></div></div>
+      <p id="progressNote" class="progress-note">Tick a trophy off and it stays ticked.</p>
+      <div id="gradeChips" class="grade-chips"></div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="roadmap" aria-labelledby="roadmapTitle">
+    <h2 id="roadmapTitle">Roadmap to the platinum</h2>
+    <p class="section-note">Built from the official descriptions. One playthrough is enough, there are no online trophies, and free roam opens after the story — except for the one warning in stage 2.</p>
+    <div class="missable-callout" role="alert">
+      <strong>&#9888; The one thing that may not wait — Positive Mental Attitude.</strong>
+      One optional meditation at Jason&rsquo;s house is only available in Chapter&nbsp;1: after the <em>Down to Earth</em> mission, follow Lucia to the balcony on a following morning and accept when she offers to teach you. It adds to the meditation counter but is not listed as a spot, and it is unconfirmed whether the trophy needs it — do it anyway, and keep a separate save. Every other trophy can be earned after the story.
+    </div>
+    <ol class="stages">
+      <li class="stage"><h3>Stage 1 — Play the story</h3><p>Chapters 1–4 and the final mission. Enjoy it at your own pace: 12 story trophies unlock as you go, and the 100% checklist appears under Touch Pad &gt; Progress once the story is done. Cheats switch trophies off, so leave them alone for the whole run.</p><p class="stage-trophies">Just Like Paradise &middot; Paradise Lost &middot; T**s Ass Drug Money &middot; Vice City, Baby! &middot; Top Of The World, Ma &middot; You Gotta Know When to Get Off &middot; Trust &middot; Break the Bank &middot; Family Matters &middot; DWNFALL &middot; Hi-Jacked &middot; Snow Storm</p></li>
+      <li class="stage"><h3>Stage 2 — Do the Chapter 1 meditation</h3><p>Before Chapter 1 ends: the balcony meditation with Lucia (see the warning above). Then meditate at all 18 spots across Leonida — a spot only counts once its closing zen animation has played.</p><p class="stage-trophies">Positive Mental Attitude</p></li>
+      <li class="stage"><h3>Stage 3 — Stranger strands</h3><p>Finish the mission chains for Andy, Kenton, Billy, Randy and Tyrone, plus three more stranger strands, and hunt Bret&rsquo;s unique animal. These feed the silver Strangers &amp; Freaks trophy.</p><p class="stage-trophies">Road to Rehabilitation &middot; This Was No Boat Accident &middot; The Lone Rider &middot; Supply &amp; Demand &middot; Spin On This! &middot; Strangers &amp; Freaks &middot; Fair Game</p></li>
+      <li class="stage"><h3>Stage 4 — Activities, crime &amp; the odd ones</h3><p>Stunts, shooting ranges, drone races, races, fishing, arcades, challenges, partner robberies, vaults and the hidden one-offs. Work through the checklist below; the vague ones are flagged where no guide has confirmed a method yet.</p><p class="stage-trophies">Cunning Stunts &middot; Master of None &middot; The Shootist &middot; Top Fun &middot; Earn Cash, Not Kudos &middot; Baited My Tackle &middot; Stick Fiddler &middot; One Last Thing &middot; Hot Together &middot; Retail Therapy &middot; Gunslinger &middot; Catch Me If You Can &middot; Challenging Tank &middot; Sneakthief &middot; Maximum Withdrawal &middot; A Classic Blitz Play &middot; Pest Control &middot; In The Beginning&hellip; &middot; Capital Offense &middot; Let&rsquo;s Go Bowling &middot; Personal Best &middot; Actions Speak Louder &middot; Bad Luck, I Guess &middot; The Truth Is Out There &middot; Ten Pin</p></li>
+      <li class="stage"><h3>Stage 5 — Collectibles, money &amp; 100%</h3><p>Cards, WAiNK scans, vehicles, exploring Leonida, laundering, shopping and garages. Then finish the 100% checklist for the gold A Long Road — and the platinum pops with it.</p><p class="stage-trophies">Don&rsquo;t Touch My Deck &middot; You WAiNKer! &middot; Whip It Good &middot; The Goodtime State &middot; Dime on the Dollar &middot; Treat Yo Self &middot; Little Boxes &middot; On the Spot &middot; A Long Road &middot; Vice Got a Price!</p></li>
+    </ol>
+  </section>
+
+  <section id="tracker" aria-labelledby="trackerTitle">
+    <h2 id="trackerTitle">Trophy tracker</h2>
+    <div class="controls">
+      <label class="control search">Search <input id="search" type="search" placeholder="Name, mission or keyword…" autocomplete="off"></label>
+      <label class="control">Kind
+        <select id="kindFilter">
+          <option value="all">All kinds</option>
+          <option value="story">Story</option>
+          <option value="missable">Missable</option>
+          <option value="collectible">Collectibles</option>
+          <option value="activity">Activities</option>
+          <option value="crime">Crime</option>
+          <option value="side">Side missions</option>
+          <option value="misc">Odd ones &amp; money</option>
+          <option value="platinum">Platinum path</option>
+          <option value="online">Online</option>
+        </select>
+      </label>
+      <label class="control">Grade
+        <select id="gradeFilter">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <label class="control">Sort
+        <select id="sortOrder">
+          <option value="list">Official list order</option>
+          <option value="grade">Grade, then list order</option>
+          <option value="name">Name A–Z</option>
+          <option value="remaining">Unearned first</option>
+        </select>
+      </label>
+      <label class="control check"><input id="spoilerToggle" type="checkbox" checked> Spoiler-safe: hide hidden trophies until earned</label>
+      <label class="control check"><input id="hideEarned" type="checkbox"> Hide earned</label>
+    </div>
+    <div class="controls actions">
+      <button id="exportBtn" type="button">Export progress (.json)</button>
+      <label class="import-btn">Import progress <input id="importFile" type="file" accept="application/json,.json"></label>
+      <button id="resetBtn" type="button">Reset progress</button>
+      <span id="importNote" class="import-note" role="status"></span>
+    </div>
+    <p id="kindNote" class="kind-note" hidden></p>
+    <div id="kindStats" class="kind-stats" aria-label="Progress by kind"></div>
+    <p id="resultCount" class="result-count" role="status"></p>
+    <div id="trophyList" class="trophy-list"></div>
+    <p id="emptyState" class="empty-state" hidden>No trophies match these filters. Try clearing the search or choosing another kind.</p>
+  </section>
+
+  <section id="sources" aria-labelledby="sourcesTitle">
+    <h2 id="sourcesTitle">Sources &amp; how this guide was built</h2>
+    <p>Trophy names, descriptions, grades and hidden flags are the official PlayStation 5 list as Exophase and PSNProfiles published it on 2026-11-18 (the two agree on every name, description and grade), cross-checked on 2026-11-21 against Push Square, Planet GTA&nbsp;6, GTABase, Insider Gaming and EGamers. Every guide above is written in this entry&rsquo;s own words; each one names the source its facts come from, with a link. Where no published guide has confirmed a method yet, the trophy says so instead of guessing — five trophies are flagged unconfirmed.</p>
+    <ul class="source-list">
+      <li><a href="https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/">Exophase — GTA VI trophy list</a> — official names, descriptions, grades, hidden flags.</li>
+      <li><a href="https://psnprofiles.com/trophies/43531-grand-theft-auto-vi">PSNProfiles — Grand Theft Auto VI trophies</a> — cross-check of the list and PSN&rsquo;s tracked counts.</li>
+      <li><a href="https://www.pushsquare.com/guides/gta-6-trophy-guide-and-roadmap">Push Square — GTA 6 Trophy Guide &amp; Roadmap</a> — stunts, shooting ranges, meditation spots, garages, races and the 100% checklist.</li>
+      <li><a href="https://www.planetgta6.com/en/gta-6-trophies/">Planet GTA 6 — GTA 6 Trophies</a> — the 27 visible / 28 hidden split and Gamerscore cross-check.</li>
+      <li><a href="https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series">GTABase — GTA 6 Trophy Guide</a> — the possibly-missable meditation, bowling robbery and Strength method.</li>
+      <li><a href="https://www.thegamershub.co/gta-6/trophies/">The Gamers Hub — GTA 6 Trophy List</a> — meditation details, Personal Best and Actions Speak Louder.</li>
+      <li><a href="https://insider-gaming.com/complete-gta-6-trophy-list-how-to-get-all-trophies-achievements/">Insider Gaming — Complete GTA 6 Trophy List</a> — list cross-check.</li>
+      <li><a href="https://egamers.io/gta-6-trophy-list-all-55-trophies-and-achievements-plus-the-hardest-ones/">EGamers — GTA 6 Trophy List</a> — list cross-check and the missable flag.</li>
+    </ul>
+    <h3>Notes on the data</h3>
+    <ul>
+      <li>Grades: 1 platinum, 2 gold, 6 silver, 46 bronze. Push Square&rsquo;s guide counts 5 silver and 47 bronze instead — it lists Maximum Withdrawal as bronze; this guide follows Exophase and PSNProfiles, which agree on silver.</li>
+      <li>No online trophies: all 55 are single-player and offline. Choosing &ldquo;Online&rdquo; in the kind filter shows that on purpose.</li>
+      <li>Hidden trophies: 28 of the 55 stay hidden on PlayStation until earned. The spoiler setting hides their names, descriptions and guides until you tick them off.</li>
+      <li>Counts the game tracks: 250 of 397 stunts, 42 shooting-range challenges, 14 drone-race locations, 18 meditation spots, 18 card sets, 80 challenges, 500 profile actions.</li>
+      <li>Time: PowerPyx rates the platinum 4/10 at about 200 hours; Push Square says 300 hours or more. The game released 19 November 2026, so early guides are still being confirmed — check the linked sources for updates.</li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <p>Leonida Trophy Guide is an unofficial fan-made guide. It is not affiliated with, endorsed by or connected to Rockstar Games or Take-Two Interactive, and it uses no Rockstar logo, artwork, box art or game screenshots. Trophy names and descriptions are shown as PlayStation publishes them; all guidance text is original. Progress is saved only in this browser (localStorage) — nothing leaves your device.</p>
+  <p>Built for make.fun&rsquo;s &ldquo;Build the best GTA 6 trophy guide&rdquo; bounty. MIT licensed.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
